@@ -99,12 +99,24 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# POUR ARTHUR BASH->ZSH
+export PROMPT='%F{green}%n@%F{green}%m%f:%F{12}%~%F{12}$%f '
+export EDITOR="vim"
+
+#######
+
 plugins=(git zsh-autosuggestions web-search)
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export TERM=xterm-256color
-export PROMPT='%F{green}%n@%F{green}%m%f:%F{12}%~%F{12}$%f '
 alias nv="vim"
-alias nvzsh="vim ~/.zshrc; source ~/.zshrc"
+alias nvzsh="vim ~/work/gpio/.zshrc; source ~/work/gpio/.zshrc"
 bindkey '^o' forward-word 
+export PROMPT='%F{green}%n@%F{green}%m%f:%F{12}%~%F{12}$%f '
+export EDITOR="vim"
+export PROMPT='%F{green}%n@%F{green}%m%f:%F{12}%~%F{12}$%f '
+export EDITOR="vim"
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/snap/bin
 
 
