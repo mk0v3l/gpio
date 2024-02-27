@@ -2,9 +2,17 @@
 
 from leds import Leds
 from sensor_temp import Sensor_temp
+from water_pump import Water_pump
+from time import sleep
 
-leds = Leds()
-sensor = Sensor_temp()
+# leds = Leds()
+# sensor = Sensor_temp()
+water_pump = Water_pump(21)
+while True:
+    water_pump.fload()
+    sleep(1)
+    water_pump.stop()
+    sleep(1)
 # leds.all_on()
 
 
@@ -45,4 +53,4 @@ def test_rgb():
                 print("Invalid input")
 
 
-test_temp()
+# test_temp()
